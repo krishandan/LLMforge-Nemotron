@@ -1,6 +1,6 @@
-# 🚀 Nemotron Web Chat (vLLM Powered)
+# 🚀 LLMforge-Nemotron
 
-A lightweight, extensible web chat interface built to experiment with large language models (LLMs) served via vLLM.
+A lightweight, extensible web chat interface for experimenting with large language models (LLMs) served via vLLM, with a focus on NVIDIA Nemotron workflows.
 
 ---
 
@@ -67,7 +67,7 @@ sudo ./run-recipe.sh nemotron-3-super-nvfp4
 ### 2. Run Chat App
 
 ```bash
-streamlit run nemotron_chatapp.py
+streamlit run llmforge_nemotron.py
 ```
 
 ---
@@ -95,8 +95,8 @@ Prometheus: http://localhost:9091
 ## 📁 Project Structure
 
 ```
-Chatting_app/
-├── nemotron_chatapp.py
+LLMforge-Nemotron/
+├── llmforge_nemotron.py
 ├── requirements.txt
 ├── utils/
 └── data/

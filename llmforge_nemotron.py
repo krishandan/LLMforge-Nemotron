@@ -41,7 +41,7 @@ EMBED_MODEL_NAME = os.getenv("EMBED_MODEL", "sentence-transformers/all-MiniLM-L6
 # App + state
 # ============================================================
 
-app = FastAPI(title="Nemotron Chat Workbench")
+app = FastAPI(title="LLMforge-Nemotron")
 
 sessions: dict[str, dict[str, Any]] = {}
 session_locks: dict[str, asyncio.Lock] = {}
@@ -512,7 +512,7 @@ HTML_PAGE = r"""<!doctype html>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nemotron Chat Workbench</title>
+  <title>LLMforge-Nemotron</title>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
   <style>
@@ -832,8 +832,8 @@ HTML_PAGE = r"""<!doctype html>
   <div class="app">
     <aside class="sidebar">
       <div class="eyebrow">Local vLLM chat</div>
-      <h1 class="title">Nemotron<br />Workbench</h1>
-      <p class="subtitle">Simple model test UI with sessions, RAG, and tool calling.</p>
+      <h1 class="title">LLMforge<br />Nemotron</h1>
+      <p class="subtitle">A focused workspace for testing Nemotron models with sessions, RAG, and tool calling.</p>
 
       <div class="meta-card">
         <div class="meta-label">Backend</div>

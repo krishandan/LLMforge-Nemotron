@@ -19,8 +19,8 @@ else
 fi
 
 echo "Stopping Streamlit chat app if running..."
-pkill -f "streamlit run .*nemotron_chatapp.py" || true
-pkill -f "python3 .*nemotron_chatapp.py" || true
+pkill -f "streamlit run .*llmforge_nemotron.py" || true
+pkill -f "python3 .*llmforge_nemotron.py" || true
 
 echo "Stopping vLLM recipe if running..."
 pkill -f "run-recipe.sh" || true

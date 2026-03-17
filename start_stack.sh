@@ -6,11 +6,11 @@ set -euo pipefail
 # Config
 # =========================
 VLLM_DIR="$HOME/Documents/Projects/eugr-vllm/spark-vllm-docker"
-CHAT_APP_DIR="$HOME/Documents/Projects/Chatting_app"
+CHAT_APP_DIR="$HOME/Documents/Projects/LLMforge-Nemotron"
 MONITOR_DIR="$HOME/Documents/Krish-tesh-scripts/vllm-benchmarking"
 
 # Default chat app file
-CHAT_APP_FILE="${2:-nemotron_chatapp.py}"
+CHAT_APP_FILE="${2:-llmforge_nemotron.py}"
 
 # Pass model name as first arg
 MODEL_NAME="${1:-}"
@@ -32,7 +32,7 @@ SLEEP_SECONDS=5
 if [[ -z "$MODEL_NAME" ]]; then
   echo "Usage: $0 <model-name> [chat-app-file]"
   echo "Example: $0 nemotron-3-super-nvfp4"
-  echo "Example: $0 nemotron-3-super-nvfp4 nemotron_chatapp.py"
+  echo "Example: $0 nemotron-3-super-nvfp4 llmforge_nemotron.py"
   exit 1
 fi
 

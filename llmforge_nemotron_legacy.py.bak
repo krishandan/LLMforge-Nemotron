@@ -3,7 +3,7 @@
 Local browser chat app for a vLLM OpenAI-compatible server.
 
 Run:
-  python3 nemotron_chat_app.py
+  python3 llmforge_nemotron_legacy.py
 
 Then open:
   http://127.0.0.1:8080
@@ -26,7 +26,7 @@ HTML = """<!doctype html>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nemotron Chat</title>
+  <title>LLMforge-Nemotron</title>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
   <script type="module">
@@ -452,8 +452,8 @@ HTML = """<!doctype html>
   <div class="app">
     <aside class="sidebar">
       <div class="eyebrow">Local vLLM chat</div>
-      <h1 class="title">Nemotron<br />Workbench</h1>
-      <p class="subtitle">A simple browser chat app for your running vLLM server.</p>
+      <h1 class="title">LLMforge<br />Nemotron</h1>
+      <p class="subtitle">A focused workspace for your running vLLM Nemotron server.</p>
 
       <div class="meta-card">
         <div class="meta-label">Model</div>

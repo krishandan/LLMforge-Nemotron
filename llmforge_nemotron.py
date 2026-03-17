@@ -52,7 +52,7 @@ chroma_client = chromadb.PersistentClient(
     path=str(CHROMA_DIR),
     settings=Settings(anonymized_telemetry=False),
 )
-collection = chroma_client.get_or_create_collection(name="chatting_app_docs")
+collection = chroma_client.get_or_create_collection(name="llmforge_nemotron_docs")
 
 # ============================================================
 # Models

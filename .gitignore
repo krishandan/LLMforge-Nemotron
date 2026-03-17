@@ -1,0 +1,7 @@
+/uploads/
+/chroma/
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/

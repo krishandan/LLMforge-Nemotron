@@ -1,5 +1,5 @@
-/uploads/
-/chroma/
+/data/uploads/
+/data/chroma/
 __pycache__/
 *.py[cod]
 .env
